@@ -1,0 +1,90 @@
+Midterm Exam
+The Midterm Exam is Tuesday, March 14. It will include the material in Chapters 1 - 8 of the HFSD (Head First Software Development) book:
+
+Big Bang approach to development - description, the path it takes, and disadvantages
+
+Big bang approachto developement utilizes the ideology of gathering all requirements, doing code, and testing
+all into one single process. This gives the programmers more flexibility in their design but less
+reliability for correctness with the customer because the developer does not check with the customer
+until the entire process is finished. This gives a 50-50 chance of whither the client will approve
+of the finished product or not.
+
+
+Iterative approach to development - description, the path it takes, and advantages
+
+An iterative approach to development utilizes x-amount of day blocks of testing, coding and requirements.
+After each "x-day iteration", the developers check in with the client to ensure the project is fullfilling
+the clients expectations. Iterations utilize user stories which include: Title, description, estimate and priority.
+The devlopers organize user stories based on estimate and priority as well as adjust their work days-per-iteration
+using a velocity coefficient. The problem with iterative approach is that there is little felxibility in adding
+new features and stories. Adjusting an iteration when new stories arrive can be cumbersome but doable. The advantages
+is the stability of the project. This means that the project will constantly be corrected by the developers by consulting
+with the client after every iteration to ensure stories and projects are at expectations. If not, this could mean more work
+but correct results.
+
+Role of the customer/client in the process
+
+User Stories - all parts, description, creation
+	Title, description, estimation, priority
+
+	User stories will be created using a blue sky-session or single-person brainstorming. Then decided by planning poker.
+	Estimates and the Estimation Process, including planning poker
+
+Iteration and deadline planning
+	Setting estimations for user stories requires customer PRIORITIES
+	Using those estimations along with priority, you can develope iterations based on x-amount of days
+	Set a velocity to accomodate for real-world software engineering
+Utopian vs. Real-World days
+	Utopia - I can get this done in 3 days
+	Real-world days - plan for off-days
+
+Velocity - description, standard rate, what does it mean if velocity is higher or lower
+	Velocity is the ration of how many ACTUAL work days you can get done with a set(or one) developers. 0.7
+	is the normal rate. Higher velocity means we get more shit done, lower velocity means were planning for 
+	low work output.
+
+Big Board - basics of what it shows and how it is used
+	User stories on left hand side.
+	Progress is middle section -> includes task complete spot
+	Burndown, Next Iteration and Completed User Stories on right hand side.
+Good-enough design, SRP, DRY
+	Good Enough Design:
+		just good enough to get the job to meet the customer's needs and easy enough that the developers 
+		can develop code on time
+	SRP:
+	Single responsibility Principle - every object in your system should have a single responsibility and all 
+									  that object services  should be focused on carrying out that responsibility
+	
+	DRY:
+	Don’t repeat yourself - Avoid duplicate code by abstracting or separating out things that are common and 
+							placing those things in a single location
+Version control - jobs that it does, commit messages, tags, branches, trunks.
+
+	Version Control - jobs that it does - keeps track of file changes and helps coordinate different developers working 
+					  on different parts of your system at the same time
+	tag -a way to keep track of revision number in a version. Its a snapshot of your code at a certain time
+	branches - The place where you are working on code that is not in the main development tree of the code
+	trunks - the latest code by default and has all the latest features
+	
+Role and importance of build artifacts (code, configuration, tools, etc)
+		What is produced as the project continues.
+		
+		Purposes:
+			Demonstrates that a process was followed
+			Pass knowledge on from one group of people to another
+			Assist in building customer trust
+			-Deliverables--things you can show
+			Provide history for comparisom
+			
+Types of Testing: black box, white box, grey-box, what they include and who performs them
+		See paper
+Unit testing, system testing, testing vs development
+	Unit Testing - focus on testing small pieces of code at one time, isolates components from one another to
+				   minimize dependencies
+	System testing - treat the system like a black box, focusing on functionality for the customer
+	
+Test-Driven Development (TDD) - basic process, advantages
+	Write the tests before any code and letting the test dive your code development. You want your test to fail when you first write 
+	Then write the code to pass your test.   Write the simplest code to pass your test. The advantage is that you have to focus on functionality 
+	right away.
+	
